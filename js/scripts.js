@@ -20,9 +20,17 @@ Address.prototype.fullAddress = function() {
 }
 
 // user interface logic
-$(document).ready(function() { 
+$(document).ready(function() {
   $("#add-address").click(function() {
     $("#new-addresses").append('<div class="new-address">' +
+
+                                  '<label class="radio-inline"><input type="radio" name="address-type" checked="checked">Home</label>' +
+                                  '<label class="radio-inline"><input type="radio" name="address-type" checked="checked">Business</label>' +
+                                  '<label class="radio-inline"><input type="radio" name="address-type" checked="checked">Cabin</label>' +
+                                  '<label class="radio-inline"><input type="radio" name="address-type" checked="checked">Other</label>' + 
+
+
+
                                  '<div class="form-group">' +
                                    '<label for="new-street">Street</label>' +
                                    '<input type="text" class="form-control new-street">' +
